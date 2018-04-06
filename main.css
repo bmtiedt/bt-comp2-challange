@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  color: #CADF9E
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* .icons-sign-in {
+  height: 3rem;
+} */
+
+h1 {
+  color: #F5E6E8;
+  font-size: 1.2em;
+}
+
+.full-header-section {
+  background-color: #192A51;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 40% 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "h1 h2 h3 h6 h6 h6 h4"
+  "h1 h2 h3 h6 h6 h6 h5";
+  height: 10rem;
+  width: 100%;
+}
+
+#h-shares {
+  grid-area: h1;
+}
+
+#h-playlist {
+  grid-area: h2;
+}
+
+#h-personal {
+  grid-area: h3;
+}
+
+#h-sign-in {
+  grid-area: h4;
+}
+
+#h-2win {
+  grid-area: h5;
+}
+
+#extra {
+  grid-area: h6
+}
+
+
+button {
+  background-color: #192A51;
+  border: 0 0 .25rem 2.5rem;
+}
+
+button:hover  {
+  /* background-color: black; */
+  border-bottom: solid #967AA1;
+}
+
+.main-grid-area {
+  background-color: #D5C6E0;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  /* grid-template-rows: 25% 25% 25% 25%; */
+  grid-template-areas:
+        "a1 a2 a3 a4"
+        "a5 a6 a7 a8";
+  /* grid-column-gap: 2%;
+  grid-row-gap: 2%; */
+  grid-column-gap: 10px;
+  grid-row-gap: 1em;
+  height: 100vh;
+  justify-content: space-around;
+  /* align-self: space-around; */
+  width: 100%;
+}
+
+.grid-item {
+  height: 100%;
+  width: 100%;
+  background-color: #AAA1C8;
+}
+
+#a1 {
+  grid-area: a1;
+}
+
+#a2 {
+  grid-area: a2;
+}
+
+#a3 {
+  grid-area: a3;
+}
+
+#a4 {
+  grid-area: a4;
+}
+
+#a5 {
+  grid-area: a5;
+}
+
+#a6 {
+  grid-area: a6;
+}
+
+#a7 {
+  grid-area: a7;
+}
+
+#a8 {
+  grid-area: a8;
+}
+
+
+
+/* @media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "side"
+      "footer";
+
+    grid-template-columns: 1fr;
+    grid-template-rows:
+      auto /* Header */
+      minmax(75px, auto) /* Nav */
+      1fr /* Content */
+      minmax(75px, auto) /* Sidebar */
+      auto; /* Footer */
+  /* }
+
+  nav, aside {
+    margin: 0;
+  }
+} */
