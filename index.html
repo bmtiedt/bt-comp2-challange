@@ -3,34 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>A Static Comp 2</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="normalize.css" type="text/css">
+  <link rel="stylesheet" href="main.css" type="text/css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  
+  <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
 </head>
 <body>
   <header class="main-container">
     <div class="full-header-section">
-    <button class="shares-button" id="h-shares" role="button">    
-      <img  class="icon-shares" src="" alt="social media shares">
-      <h1>Shares</h1>
-    </button>
-    <button class="platlist-button" id="h-playlist" role="button">
-      <img class="icon-playlist" src="" alt="playlist">
-      <h1>Playlist</h1>
-    </button>
-    <button class="personal-button" id="h-personal" role="button">
-      <img class="icon-personal" src="" alt="personal videos">
-      <h1>Personal</h1>
-    </button>
-    <div id="extra"></div>   
-    <button class="icons-sign-in" id="h-sign-in" role="button">
-      <img class="icon-user-sign-in" src="" alt="sign in icon">
-      <h1>Admin Username</h1>
-      <img class="icon-sign-in-arrow" src="" alt="sign in menu">
-    </button>
-    <div class="icon-2win" id="h-2win">
-      <img class="icon-2win!" src="" alt="need alt here">
+      
+      <button class="shares-button" id="h-shares" role="button">
+        <i class="fas fa-share-alt-square"></i>
+        <h1>Shares</h1>
+      </button>
+      <button class="platlist-button" id="h-playlist" role="button">
+        <i class="fas fa-list-ul"></i>
+        <h1>Playlist</h1>
+      </button>
+      <button class="personal-button" id="h-personal" role="button">
+        <i class="far fa-user"></i>
+        <h1>Personal</h1>
+      </button>
+      <div id="extra"></div>
+        <button class="icons-sign-in" id="h-sign-in" role="button">
+          <i class="far fa-user-circle"></i>
+          <h1>Admin Username</h1>
+          <i class="fas fa-sort-down"></i>
+        </button>
+      <div class="icon-2win" id="h-2win">
+        <img class="icon-2win!" src="images/rockstar.jpg" alt="need alt here">
+       </div>
     </div>
-  </div>
   </header>
   <article class="shares">
     <h2 class="h2">Shares</h2>
@@ -40,15 +44,156 @@
   <main class="main-grid-area">
 
       <article class="grid-item" id="a1">
-        <i class="fas fa-arrow-alt-circle-right"></i>
+        <section class="card-header">
+          <div class="view-arrow">
+          <i class="fas fa-arrow-alt-circle-right"></i>
+        </div>
+          <h4 class="views-card">Views</h4>
+          <p class="number-views-card">08</p>
+        </section>
+        <section class=".wrapper-card-info">
+          <h4 class="recipients-name">Anacapa</h4>
+          <p class="location"><em>Location:</em><br/>Pacific Ocean 9 mi. from Cali. coast</p>
+          <p>
+          <a href="#">https://en.wikipedia.org/wiki/Anacapa_Island</a>
+          </p>
+          <p class="playlist-text">INFO</p>
+          <p class="playlist-name">40-foot high nat. bridge</p>
+          <p class="">Pacific Ocean</p>
+          <p class="attachments-number">01</p>
+        </section>  
       </article>
-      <article class="grid-item" id="a2"></article>
-      <article class="grid-item" id="a3"></article>
-      <article class="grid-item" id="a4"></article>
-      <article class="grid-item" id="a5"></article>
-      <article class="grid-item" id="a6"></article>
-      <article class="grid-item" id="a7"></article>
-      <article class="grid-item" id="a8"></article>
+
+      <article class="grid-item" id="a2">
+        <section class="card-header">
+          <div class="view-arrow">
+          <i class="fas fa-arrow-alt-circle-right"></i>
+          </div>
+          <h4 class="views-card">Views</h4>
+          <p class="number-views-card">03</p>
+        </section>
+        <h3 class="recipients-name">Ayers Rock</h3>
+        <p class="location"><em>Location:</em><br />N. Territory's arid "red Centre"</p>
+        <p>
+        <a href="#">https://en.wikipedia.org/wiki/Uluru</a>
+        </p>
+        <p class="playlist-text">INFO</p>
+        <p class="playlist-name">348 m high, sandstone</p>
+        <p class="">Australia</p>
+        <p class="attachments-number">07</p>
+      </article>
+
+
+      <article class="grid-item" id="a3">
+        <section class="card-header">
+          <div class="view-arrow">
+          <i class="fas fa-arrow-alt-circle-right"></i>
+        </div>
+          <h4 class="views-card">Views</h4>
+          <p class="number-views-card">06</p>
+        </section>
+        <h3 class="recipients-name">El Capitan</h3>
+        <p class="location"><em>Location:</em><br />Yosemite National Park</p>
+        <p>
+        <a href="#">https://en.wikipedia.org/wiki/El_Capitan</a>
+        </p>
+        <p class="playlist-text">INFO</p>
+        <p class="playlist-name">3,000 feet base to summit</p>
+        <p class="">California</p>
+        <p class="attachments-number">04</p>
+      </article>
+
+      <article class="grid-item" id="a4">
+        <section class="card-header">
+          <div class="view-arrow">
+          <i class="fas fa-arrow-alt-circle-right"></i>
+        </div>
+          <h4 class="views-card">Views</h4>
+          <p class="number-views-card">08</p>
+        </section>
+        <h3 class="recipients-name">Red Rock</h3>
+        <p class="location"><em>Location:</em><br />10  miles west of Denver</p>
+        <p>
+        <a href="#">https://en.wikipedia.org/wiki/Red_Rocks_Amphitheatre</a>
+        </p>
+        <p class="playlist-text">INFO</p>
+        <p class="playlist-name">amphitheatre 6,450 feet</p>
+        <p class="">Denver</p>
+        <p class="attachments-number">07</p>
+      </article>
+      <article class="grid-item" id="a5">
+        <section class="card-header">
+          <div class="view-arrow">
+          <i class="fas fa-arrow-alt-circle-right"></i>
+        </div>
+          <h4 class="views-card">Views</h4>
+          <p class="number-views-card">02</p>
+        </section>
+        <h3 class="recipients-name">Rock of Gibralter</h3>
+        <p class="location"><em>Location:</em><br />on the Iberian Peninsula</p>
+        <p>
+        <a href="#">https://en.wikipedia.org/wiki/Rock_of_Gibraltar</a>
+        </p>
+        <p class="playlist-text">INFO</p>
+        <p class="playlist-name">peaks over 400 m above sea level</p>
+        <p class="">Spain</p>
+        <p class="attachments-number">11</p>
+      </article>
+
+      <article class="grid-item" id="a6">
+        <section class="card-header">
+          <div class="view-arrow">
+          <i class="fas fa-arrow-alt-circle-right"></i>
+        </div>
+          <h4 class="views-card">Views</h4>
+          <p class="number-views-card">12</p>
+        </section>
+        <h3 class="recipients-name">Rosetta Stone</h3>
+        <p class="location"><em>Location:</em><br />found in 1799</p>
+        <p>
+        <a href="#">https://en.wikipedia.org/wiki/Rosetta_Stone</a>
+        </p>
+        <p class="playlist-text">INFO</p>
+        <p class="playlist-name">the key to deciphering Egyptian hieroglyphs</p>
+        <p class="">British Museum</p>
+        <p class="attachments-number">16</p>
+      </article>
+
+      <article class="grid-item" id="a7">
+        <section class="card-header">
+          <div class="view-arrow">
+          <i class="fas fa-arrow-alt-circle-right"></i>
+          </div>
+          <h4 class="views-card">Views</h4>
+          <p class="number-views-card">18</p>
+        </section>
+        <h3 class="recipients-name">Arches National Park</h3>
+        <p class="location"><em>Location:</em><br />4 miles north of Moab, Utah</p>
+        <p>
+        <a href="#">https://en.wikipedia.org/wiki/Arches_National_Park</a>
+        </p>
+        <p class="playlist-text">INFO</p>
+        <p class="playlist-name">park consists of 76,679 acres</p>
+        <p class="">Utah</p>
+        <p class="attachments-number">14</p>
+      </article>
+      <article class="grid-item" id="a8">
+        <section class="card-header">
+          <div class="view-arrow">
+          <i class="fas fa-arrow-alt-circle-right"></i>
+        </div>
+          <h4 class="views-card">Views</h4>
+          <p class="number-views-card">5</p>
+        </section>
+        <h3 class="recipients-name">Stone Hedge</h3>
+        <p class="location"><em>Location:</em><br />2 miles west of Amesbury</p>
+        <p>
+        <a href="#">https://en.wikipedia.org/wiki/Stonehenge</a>
+        </p>
+        <p class="playlist-text">INFO</p>
+        <p class="playlist-name">weighing around 25 tons</p>
+        <p class="">England</p>
+      </article>
 
   </main>
 

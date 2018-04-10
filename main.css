@@ -11,22 +11,42 @@
 
 html {
   box-sizing: border-box;
-  color: #CADF9E
   font-size: 62.5%;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  background-image: url("images/marble.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  font-family: 'Gamja Flower', cursive;
   font-weight: 400;
+  height: 100vh;
 }
 
-/* .icons-sign-in {
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*section {
+  align-self: flex-end;
+}*/
+
+.icons-sign-in {
+  display: inline-block;
   height: 3rem;
-} */
+}
 
 h1 {
   color: #F5E6E8;
-  font-size: 1.2em;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 1.75rem;
+}
+
+.shares {
+  line-height: 1rem;
+  padding: 1rem;
 }
 
 .full-header-section {
@@ -68,91 +88,202 @@ h1 {
 
 button {
   background-color: #192A51;
-  border: 0 0 .25rem 2.5rem;
+  border: 0;
 }
 
 button:hover  {
-  /* background-color: black; */
-  border-bottom: solid #967AA1;
+  border-bottom: solid rgba(0, 0, 255, .2) 1rem;
+  transition: .5s;
+}
+
+.icon-2win img {
+  height: 35px;
+}
+
+.icons-sign-in {
+  height:  6rem;
 }
 
 .main-grid-area {
-  background-color: #D5C6E0;
   display: grid;
   grid-template-columns: 20% 20% 20% 20%;
-  /* grid-template-rows: 25% 25% 25% 25%; */
   grid-template-areas:
         "a1 a2 a3 a4"
         "a5 a6 a7 a8";
-  /* grid-column-gap: 2%;
-  grid-row-gap: 2%; */
-  grid-column-gap: 10px;
-  grid-row-gap: 1em;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2em;
   height: 100vh;
   justify-content: space-around;
-  /* align-self: space-around; */
   width: 100%;
 }
 
 .grid-item {
   height: 100%;
   width: 100%;
-  background-color: #AAA1C8;
+  border: 2px gray;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  margin: 10px;
 }
 
-#a1 {
+p {
+  margin: 0;
+  word-break: break-all;
+  color: #542508;
+}
+
+.views-card {
+  margin: 0;
+  font-weight: lighter;
+  position: absolute;
+  right: 18px;
+  top: 13px;
+}
+
+.view-arrow {
+  font-size: 2rem;
+   margin-left: 3rem;
+   padding-top: 3rem;
+}
+
+h4 {
+  color: #542508;
+  font-size: 1.75rem;
+}
+
+.number-views-card {
+  font-size: 3rem;
+  font-weight: lighter;
+  position: absolute;
+  top: 30px;
+  right: 21px;
+}
+
+.card-header {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  margin: 0;
+  position: relative;
+  filter: brightness(75%);
+  width: 100%;
+}
+
+.card-header:hover {
+  filter: brightness(100%);
+}
+
+#a1 section {
+  background-image: url("images/anacapa.jpg");
   grid-area: a1;
 }
 
-#a2 {
+#a2 section {
   grid-area: a2;
+  background-image: url("images/ayers rock.jpg");
 }
 
-#a3 {
+#a3 section {
+  background-image: url("images/el capitan.jpg");
   grid-area: a3;
 }
 
-#a4 {
+#a4 section {
   grid-area: a4;
+  background-image: url("images/red rock.jpg");
 }
 
-#a5 {
+#a5 section {
+  background-image: url("images/rock of gibralter.jpg");
   grid-area: a5;
 }
 
-#a6 {
+#a6 section {
+  background-image: url("images/rosettaStone.jpg");
   grid-area: a6;
 }
 
-#a7 {
+#a7 section {
+  background-image: url("images/stone arch.jpg");
   grid-area: a7;
 }
 
-#a8 {
+#a8 section {
+  background-image: url("images/stone hedge.jpg");
   grid-area: a8;
 }
 
 
+.wrapper-card-info {
+  padding: 5%;
+}
 
-/* @media (max-width: 768px) {
-  .container {
+h3 {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+
+a {
+  background: lightgray;
+  color: gray;
+  margin: 15px auto;
+  padding: 10px;
+  width: 90%;
+}
+
+.location {
+  padding-top:  1rem;
+  font-size: 1.75rem;
+}
+
+.playlist-text {
+  font-size: 12px;
+  padding-top: 1rem;
+}
+
+.playlist-name {
+  font-size: 1.75rem;
+  margin: 5px 0 15px;
+}
+
+.attachments-number {
+  color: #00B7FF;
+  font-size: 40px;
+  font-weight: lighter;
+}
+  
+@media screen and (max-width: 600px) {
+  .full-header-section {
+    background-color: #192A51;
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr 40% 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
-      "header"
-      "nav"
-      "content"
-      "side"
-      "footer";
-
-    grid-template-columns: 1fr;
-    grid-template-rows:
-      auto /* Header */
-      minmax(75px, auto) /* Nav */
-      1fr /* Content */
-      minmax(75px, auto) /* Sidebar */
-      auto; /* Footer */
-  /* }
-
-  nav, aside {
-    margin: 0;
+    "h1 h2 h3 h6 h6 h6 h4"
+    "h1 h2 h3 h6 h6 h6 h5";
+    height: 10rem;
+    width: 100%;
   }
-} */
+
+
+.main-grid-area {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-areas:
+        "a1 a2"
+        "a3 a4"
+        "a5 a6"
+        "a7 a8";
+    grid-column-gap: 2rem;
+    grid-row-gap: 2em;
+    height: 100vh;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+
+
+
+  
